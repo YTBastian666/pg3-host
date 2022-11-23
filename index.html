@@ -1,0 +1,98 @@
+
+<!doctype html>
+<html lang="es">
+
+
+<script type="text/javascript">
+  
+const valores = window.location.search;
+  
+//Creamos la instancia
+const urlParams = new URLSearchParams(valores);
+
+var correo = urlParams.get('correo');
+
+
+
+
+  function inicia(){
+
+    result=confirm("Ud esta seguro que quiere loggearse");
+
+      if (result==true) {
+
+        location.href="login.html";
+
+      } else {
+
+          return false;
+      }
+
+  }
+
+
+</script>
+
+<head>  
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" type="image/x-icon" href="images/diseno-de-interfaz-de-usuario.png">
+  <!-- FUENTES DE GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+  <!-- ARCHIVOS CSS BOOTSTRAP 4 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <!-- ARCHIVOS CSS PERSONALIZADOS -->
+  <link type="text/css" rel="stylesheet" href="css/estilos.css">
+  <title>Guía Práctica de User Interface</title>
+</head>
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <img src="https://scontent.cdninstagram.com/v/t51.39111-15/316698444_460943572827464_2997340027658710084_n.jpg?stp=dst-jpg_p240x240&_nc_cat=110&ccb=1-7&_nc_sid=5a057b&_nc_ohc=h2CfDaO7oAkAX_23lYe&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=02_AVBAjyXjiAbGEjT9hbUD_SJZuR4OZlAAyZgFT8B02Q3OPA&oe=63811B7C" width="100" height="100"><a class="navbar-brand" href="">Solo exclusive</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+<!-- SECCION QUIEN SOY -->
+<section class="quien-soy py-4 mt-5" id="interfaz">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 text-center">
+        <img src="images/diseno-web.png" alt="Soy el  desarrolador"
+        class="img-fluid mb-4 mb-md-0">
+      </div>
+      <div class="col-12 col-md-6 text-center text-md-left align-self-md-center ">
+        <h1 class="display-4 font-weight-bold text-primary">UI/UX</h1> 
+        <p>La interfaz de usuario o UI <b>(User Interface)</b> es un concepto que abarca arquitectura de información, patrones y diferentes elementos  visuales que nos permiten interactuar de forma eficaz con sistemas operativos y softwares de diversos dispositivos.
+          El diseño UX <b>(User Experience)</b> hace referencia a lo que experimenta el usuario antes, durante y después de entrar en contacto con una página web.</p> 
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+
+  
+
